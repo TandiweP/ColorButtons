@@ -10,10 +10,21 @@ const makeRandColor = () => {
 const buttons = document.querySelectorAll('button');
 
 for (let button of buttons) {
-    button.addEventListener('click', colorize)
+    button.addEventListener('click', function () {
+        console.log("Clicked");
+
+    })
 }
 
 function colorize() {
     this.style.backgroundColor = makeRandColor();
 }
+
+// for (let button of buttons) {
+//     button.addEventListener('click', colorize)
+// }
+
+// function colorize() {
+//     this.style.backgroundColor = makeRandColor();
+// }
 
